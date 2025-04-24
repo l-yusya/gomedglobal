@@ -315,14 +315,14 @@ section div nav .navigation-logo img:hover {
     section div nav .navigation-pages a:hover {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-blue-color);
+        text-decoration-color: var(--blue-accent-color);
         text-decoration-thickness: 2px;
     }
 
     section div nav .navigation-pages a:active {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-blue-color);
+        text-decoration-color: var(--blue-accent-color);
         text-decoration-thickness: 2px;
     }
 
@@ -393,7 +393,7 @@ section div nav .navigation-logo img:hover {
 
     section div .navigation .navigation-wrapper {
         display: grid;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 80% 20%;
         grid-template-rows: auto;
         justify-content: space-evenly;
         align-items: center;
@@ -412,7 +412,7 @@ section div nav .navigation-logo img:hover {
     section div nav .navigation-pages a {
         position: relative;
         font-size: 1.6rem;
-        color: var(--dark-blue-color);
+        color: var(--blue-accent-color);
         font-weight: 700;
         text-decoration: none;
         line-height: 1.7rem;

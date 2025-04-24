@@ -1,5 +1,5 @@
 .navigation-sticky {
-    background-color: var(--red-accent-color);
+    background-color: var(--blue-accent-color);
     padding: 0 24px;
 }
 
@@ -161,7 +161,7 @@ section div nav .navigation-logo-sticky img {
     .navigation__languages--eng a:hover {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
@@ -169,7 +169,7 @@ section div nav .navigation-logo-sticky img {
     .navigation__languages--eng a:active {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
@@ -186,14 +186,14 @@ section div nav .navigation-logo-sticky img {
     .navigation-pages-sticky a:hover {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
     .navigation-pages-sticky a:active {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
@@ -286,11 +286,11 @@ section div nav .navigation-logo-sticky img {
 
     .navigation-pages-sticky a {
         position: relative;
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         color: var(--white-background);
         font-weight: 700;
         text-decoration: none;
-        line-height: 1.5rem;
+        line-height: 1.7rem;
     }
 
     .navigation-pages-sticky a:hover {
@@ -314,13 +314,13 @@ section div nav .navigation-logo-sticky img {
     }
 
     .navigation-social {
-        min-width: 50px;
+        min-width: 60px;
         display: flex;
         justify-content: flex-end;
     }
 
     .navigation-social img {
-        max-width: 28px;
+        max-width: 35px;
         border-radius: 0.4rem;
     }
 

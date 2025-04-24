@@ -5,11 +5,11 @@
     --main-text-font: 'Open Sans', sans serif;
     --button-text-font: 'Hind', sans-serif;
     --main-text-color: #545280;
-    --dark-red-color: rgb(198, 16, 23);
-    --red-accent-color: #ED1C24;
-    --dark-red-desaturated: rgb(242, 95, 100);
-    --red-accent-desaturated: #F68E92;
-    --divider-color: #f50f24;
+    --dark-blue-color: rgb(4, 30, 58);
+    --blue-accent-color: rgb(18, 52, 88);
+    --dark-blue-desaturated: rgb(16, 36, 58);
+    --blue-accent-desaturated: rgb(30, 64, 92);
+    --divider-color: rgb(14, 35, 66);
     --dark-gray-color: rgb(72, 75, 76);
     --gray-accent-color: rgb(97, 101, 102);
     --light-gray-color: #D6D6D6;
@@ -222,7 +222,7 @@ form select {
     font-weight: 700;
     font-stretch: 100%;
     color: var(--white-background);
-    background-color: var(--red-accent-color);
+    background-color: var(--blue-accent-color);
     border-radius: 30px;
     justify-content: center;
     align-items: center;

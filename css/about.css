@@ -435,7 +435,7 @@
     font-family: var(--button-text-font);
     font-size: 1rem;
     font-weight: 700;
-    color: var(--red-accent-color);
+    color: var(--blue-accent-color);
     background-color: var(--white-background);
     border-radius: 30px;
     justify-content: center;
@@ -444,13 +444,13 @@
 }
 
 .invite__btn:hover {
-    background-color: var(--dark-red-color);
+    background-color: var(--dark-blue-color);
     color: var(--white-background);
     transition: 1s;
 }
 
 .invite__btn:active {
-    background-color: var(--dark-red-color);
+    background-color: var(--dark-blue-color);
     color: var(--white-background);
     transition: 1s;
 }

@@ -3,10 +3,10 @@
     --main-text-font: 'Open Sans', sans serif;
     --button-text-font: 'Hind', sans-serif;
     --main-text-color: #545280;
-    --dark-red-color: rgb(198, 16, 23);
-    --red-accent-color: #ED1C24;
-    --dark-red-desaturated: rgb(242, 95, 100);
-    --red-accent-desaturated: #F68E92;
+    --dark-blue-color: rgb(198, 16, 23);
+    --blue-accent-color: #ED1C24;
+    --dark-blue-desaturated: rgb(242, 95, 100);
+    --blue-accent-desaturated: #F68E92;
     --divider-color: #f50f24;
     --dark-gray-color: rgb(72, 75, 76);
     --gray-accent-color: rgb(97, 101, 102);
@@ -380,7 +380,7 @@ hr {
 }
 
 .play-button:hover {
-    background-color: var(--red-accent-color);
+    background-color: var(--blue-accent-color);
     cursor: pointer;
 }
 
@@ -389,5 +389,5 @@ hr {
 }
 
 .video__placeholder--container:hover>.play-button {
-    background-color: var(--red-accent-color);
+    background-color: var(--blue-accent-color);
 }

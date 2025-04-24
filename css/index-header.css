@@ -3,7 +3,7 @@ header .languages {
     display: none;
 }
 
-header .languages_red {
+header .languages_blue {
     background-color: var(--gray-accent-color);
     padding: 0 24px;
 }
@@ -118,15 +118,15 @@ header .contacts__item_black a:hover {
 
 header .banner-bg {
     min-height: 75vh;
-    background-size: cover;
-    background-position: 43.44% 84.95%;
+    background-size:auto;
+    background-position: 85% 84.95%;
 }
 
 header .banner-bg_origin {
-    background: linear-gradient(to bottom, rgba(72, 75, 76, 0.7), rgba(97, 101, 102, 0.7)), url(../img/gallery/funny-choir-photo.jpg) no-repeat;
+    background: linear-gradient(to bottom, rgba(72, 75, 76, 0.3), rgba(97, 101, 102, 0.3)), url(../img/globe5.jpg) no-repeat;
     padding: 0 24px;
-    background-position: 48.44% 35.95%;
-    background-attachment: fixed;
+    background-position: 85% 35.95%;
+    background-attachment: scroll;
 }
 
 /* header .banner-bg_origin {
@@ -286,7 +286,7 @@ section div nav .navigation-logo img:hover {
     .navigation__languages--eng a:hover {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
@@ -298,7 +298,7 @@ section div nav .navigation-logo img:hover {
     .navigation__languages--eng a:active {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
@@ -315,14 +315,14 @@ section div nav .navigation-logo img:hover {
     section div nav .navigation-pages a:hover {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
     section div nav .navigation-pages a:active {
         color: var(--headings-dark-color);
         text-decoration: underline;
-        text-decoration-color: var(--dark-red-color);
+        text-decoration-color: var(--dark-blue-color);
         text-decoration-thickness: 2px;
     }
 
@@ -400,7 +400,7 @@ section div nav .navigation-logo img:hover {
     }
 
     section div nav .navigation-pages {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         font-weight: 700;
         color: var(--nav-pages-color);
         min-width: 480px;
@@ -411,11 +411,11 @@ section div nav .navigation-logo img:hover {
 
     section div nav .navigation-pages a {
         position: relative;
-        font-size: 1.2rem;
-        color: var(--white-background);
+        font-size: 1.6rem;
+        color: var(--blue-accent-color);
         font-weight: 700;
         text-decoration: none;
-        line-height: 1.5rem;
+        line-height: 1.7rem;
     }
 
     section div nav .navigation-pages a:hover {
@@ -441,20 +441,19 @@ section div nav .navigation-logo img:hover {
     section div nav .navigation-social {
         min-width: 50px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
     section div nav .navigation-social img {
-        max-width: 28px;
+        max-width: 35px;
         border-radius: 0.4rem;
+
     }
 
     section div nav .navigation-social a:hover {
-        max-width: 32px;
-        border: 1px solid var(--button-black-color);
-        border-radius: 0.2rem;
-        box-shadow: 0 0 2px var(--offer-jbl-color);
+        max-width: 40px;
         transform: scale(1.3);
+
     }
 
     .navigation__languages {
@@ -464,7 +463,7 @@ section div nav .navigation-logo img:hover {
 
 
 section div .banner {
-    padding: 100px 0 130px 0;
+    padding: 150px 0 130px 0;
 }
 
 section div .banner__text {
@@ -485,8 +484,9 @@ div .banner__text h1 {
 div .banner__text p {
     font-size: 1.3rem;
     color: var(--white-background);
+    text-transform: uppercase;
     line-height: 1.55rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     height: auto;
     letter-spacing: normal;
     text-align: left;
@@ -494,7 +494,7 @@ div .banner__text p {
 }
 
 div .links {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 div .links a {
@@ -510,7 +510,7 @@ div .links a {
 }
 
 .links__donate {
-    background-color: var(--dark-red-color);
+    background-color: var(--dark-blue-color);
     color: var(--white-background);
     border-radius: 25px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -531,20 +531,20 @@ div .links a {
 
 .links__invite {
     background-color: var(--white-background);
-    color: var(--dark-red-color);
+    color: var(--dark-blue-color);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     width: 180px;
 }
 
 .links__invite:hover {
-    background-color: var(--dark-red-color);
+    background-color: var(--dark-blue-color);
     color: var(--white-background);
     transition: 1s;
 }
 
 .links__invite:active {
-    background-color: var(--dark-red-color);
+    background-color: var(--dark-blue-color);
     color: var(--white-background);
     transition: 1s;
 }
@@ -668,9 +668,9 @@ div .links a {
         font-weight: 700;
     }
 
-    .banner__links {
-        margin-top: 30px;
-    }
+    /* .banner__links {
+        margin-top: 15px;
+    } */
 
     .links__donate {
         margin-right: 50px;
@@ -702,7 +702,7 @@ div .links a {
     }
 
     div .banner__text p {
-        font-size: 1.11rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -733,7 +733,7 @@ div .links a {
     }
 
     div .banner__text p {
-        font-size: 1.5em;
+        font-size: 1.8em;
         line-height: 2.5em;
     }
 

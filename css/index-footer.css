@@ -5,7 +5,7 @@
 
 .footer__navbar--logo {
     width: 103px;
-    height: 63px;
+    height: 103px;
     display: flex;
     margin: auto;
     padding-bottom: 30px;
@@ -39,7 +39,7 @@
     display: flex;
     color: var(--headings-dark-color);
     font-family: var(--main-text-font);
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 1px;
     font-weight: 600;
 }
@@ -94,6 +94,7 @@
     .footer__navbar {
         display: flex;
         justify-content: center;
+        align-content: center;
     }
 
 
@@ -163,7 +164,7 @@
         flex-direction: row;
         justify-content: space-around;
         padding: 0;
-        gap: 20px;
+        gap: 60px;
     }
 
     .footer__navbar--logo {
@@ -179,16 +180,17 @@
     .footer__navigation-social {
         position: relative;
         min-width: 50px;
-        max-width: 100px;
+        max-width: 200px;
         display: flex;
-        justify-content: center;
+        justify-content:space-between;
         align-items: center;
         margin: auto;
     }
 
     .footer__navigation-social img {
-        max-width: 28px;
+        max-width: 35px;
         border-radius: 0.4rem;
+        margin-right: 25px;
     }
 }
 

@@ -5,17 +5,18 @@
     --main-text-font: 'Open Sans', sans serif;
     --button-text-font: 'Hind', sans-serif;
     --main-text-color: #1b1929;
-    --dark-red-color: rgb(4, 30, 58);
-    --red-accent-color: rgb(18, 52, 88);
-    --dark-red-desaturated: rgb(16, 36, 58);
-    --red-accent-desaturated: rgb(30, 64, 92);
+    --dark-blue-color: rgb(4, 30, 58);
+    --blue-accent-color: rgb(18, 52, 88);
+    --dark-blue-desaturated: rgb(16, 36, 58);
+    --blue-accent-desaturated: rgb(30, 64, 92);
     --divider-color: rgb(14, 35, 66);
     --dark-gray-color: #484b4c;
     --gray-accent-color: #616566;
-    --light-gray-color: #d6d6d6;
+    --light-gray-color: rgb(145, 173, 192);
     --light-gray-desaturated: rgb(240, 240, 240);
     --white-background: #fffafa;
     --headings-dark-color: #1b1929;
+    --logo-color: rgb(53, 114, 239);
     scroll-behavior: smooth;
 }
 
@@ -60,7 +61,7 @@ img {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgba(242, 95, 100, 0.7);
+    background-color: rgba(4, 30, 58, 0.9);
     color: var(--white-background);
     cursor: pointer;
     padding: 10px;
@@ -69,7 +70,7 @@ img {
 }
 
 #scrollBtn:hover {
-    background-color: var(--dark-red-desaturated);
+    background-color: var(--dark-blue-desaturated);
 }
 
 @media (min-width: 768px) {

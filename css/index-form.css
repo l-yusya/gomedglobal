@@ -1,35 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
-:root {
-    font-family: 'Poppins', sans-serif;
-    --main-text-font: 'Open Sans', sans serif;
-    --button-text-font: 'Hind', sans-serif;
-    --main-text-color: #545280;
-    --dark-blue-color: rgb(4, 30, 58);
-    --blue-accent-color: rgb(18, 52, 88);
-    --dark-blue-desaturated: rgb(16, 36, 58);
-    --blue-accent-desaturated: rgb(30, 64, 92);
-    --divider-color: rgb(14, 35, 66);
-    --dark-gray-color: rgb(72, 75, 76);
-    --gray-accent-color: rgb(97, 101, 102);
-    --light-gray-color: #D6D6D6;
-    --light-gray-desaturated: rgb(240, 240, 240);
-    --white-background: #fffafa;
-    --headings-dark-color: #1b1929;
-    scroll-behavior: smooth;
-}
 
 .application {
     margin: 30px 24px;
 }
 
 .application__title {
-    color: var(--headings-dark-color);
-    font-size: 34px;
+    color: var(--white-background);
+    font-size: 1.7rem;
     font-weight: 800;
-    line-height: 46px;
+    /* line-height: 46px; */
     text-align: center;
-    margin-bottom: 10px;
+    padding: 10px 24px 10px 24px;
+    overflow-wrap: break-word;
+}
+
+.contacts__form {
+
 }
 
 .application__divider {
@@ -94,7 +81,7 @@ form fieldset,
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    max-width: 70vw;
+    /* max-width: 70vw; */
 }
 
 form select {
@@ -104,7 +91,7 @@ form select {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    width: 70vw;
+    /* width: 70vw; */
 }
 
 
@@ -130,7 +117,7 @@ form select {
     form option,
     #date .StripeElement {
         font-size: 0.9rem;
-        max-width: 50vw;
+        /* max-width: 50vw; */
 
     }
 }
@@ -138,7 +125,7 @@ form select {
 @media (min-width: 1200px) {
 
     form select {
-        width: 70%;
+        /* width: 70%; */
         font-size: 1rem;
     }
 
@@ -148,7 +135,7 @@ form select {
     form option,
     #date .StripeElement {
         font-size: 1rem;
-        max-width: 70%;
+        /* max-width: 70%; */
     }
 }
 
@@ -221,8 +208,9 @@ form select {
     font-size: 0.8rem;
     font-weight: 700;
     font-stretch: 100%;
-    color: var(--white-background);
-    background-color: var(--blue-accent-color);
+    text-transform: uppercase;
+    color: var(--dark-blue-color);
+    background-color: var(--white-background);
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -239,15 +227,15 @@ form select {
 }
 
 #submit:hover {
-    background-color: var(--dark-gray-color);
+    background-color: rgb(53, 114, 239);
     color: var(--white-background);
     transition: 1s;
 }
 
 #submit:active {
-    background-color: var(--dark-gray-color);
+    background-color: rgb(53, 114, 239);
     color: var(--white-background);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #date {

@@ -15,7 +15,7 @@ section div nav .navigation-logo-sticky img {
 
     .container-sticky {
         width: 100%;
-        display: flex;
+        display: none;
     }
 
     .navigation-logo-sticky {

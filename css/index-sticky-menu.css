@@ -4,7 +4,7 @@
 }
 
 section div nav .navigation-logo-sticky img {
-    max-width: 150px;
+    max-width: 110px;
 }
 
 @media (max-width: 990px) {
@@ -259,7 +259,7 @@ section div nav .navigation-logo-sticky img {
     }
 
     .navigation-logo-sticky img {
-        max-width: 150px;
+        max-width: 110px;
     }
 
     .navigation-logo-sticky img:hover {

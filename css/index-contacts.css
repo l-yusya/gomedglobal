@@ -208,7 +208,7 @@
 @media (min-width: 768px) {
     .address__wrapper--info {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 65% 35%;
         grid-template-areas:
             "address form";
         grid-column-gap: 20px;
@@ -218,6 +218,7 @@
 
     .contacts__address {
         grid-area: address;
+        padding-left: 0px;
     }
 
     .contacts__form {

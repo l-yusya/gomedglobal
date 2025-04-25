@@ -242,29 +242,30 @@ form select {
     display: none;
 }
 
-#apply-form-status {
+#contacts__form--status {
     font-family: inherit;
     font-size: 1rem;
-    color: var(--headings-dark-color);
+    color: var(--white-background);
     font-weight: 700;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
     padding: 0 12px;
-    width: 70vw;
+    width: 80%;
+    text-align: center;
 }
 
 @media (min-width: 1024px) {
 
-    #apply-form-status {
-        max-width: 50vw;
+    #contacts__form--status {
+        max-width: 80%;
 
     }
 }
 
 @media (min-width: 1200px) {
 
-    #apply-form-status {
-        max-width: 70%;
+    #contacts__form--status {
+        max-width: 80%;
     }
 }

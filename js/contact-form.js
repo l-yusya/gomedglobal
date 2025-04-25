@@ -1,18 +1,18 @@
 (function () {
-  const dateField = document.querySelector("#date-field");
-  const date = document.querySelector("#date");
+  // const dateField = document.querySelector("#date-field");
+  // const date = document.querySelector("#date");
 
-  function dateFieldSwitch() {
-    dateField.style.display = "none";
-    date.style.display = "block";
-  }
+  // function dateFieldSwitch() {
+  //   dateField.style.display = "none";
+  //   date.style.display = "block";
+  // }
 
-  dateField.addEventListener("focus", dateFieldSwitch);
+  // dateField.addEventListener("focus", dateFieldSwitch);
 
-  const form = document.getElementById("apply-form");
+  const form = document.getElementById("contact-form");
   async function handleSubmit(event) {
     event.preventDefault();
-    const status = document.getElementById("apply-form-status");
+    const status = document.getElementById("contacts__form--status");
     const data = new FormData(event.target);
     fetch(event.target.action, {
       method: form.method,
@@ -23,7 +23,7 @@
     })
       .then((response) => {
         if (response.ok) {
-          status.innerHTML = "Дякуємо за заявку, ми з вами зв'яжемося!";
+          status.innerHTML = "Thank you for your inquiry! We'll get in touch with you asap!";
           form.reset();
         } else {
           response.json().then((data) => {
@@ -33,14 +33,14 @@
                 .join(", ");
             } else {
               status.innerHTML =
-                "Вибачте, здається щось пішло не так під час відправлення заявки.";
+                "Oops, something went wrong. Please try other contact options";
             }
           });
         }
       })
       .catch((error) => {
         status.innerHTML =
-          "Вибачте, здається щось пішло не так під час відправлення заявки.";
+          "ВOops, something went wrong. Please try other contact options";
       });
   }
   form.addEventListener("submit", handleSubmit);

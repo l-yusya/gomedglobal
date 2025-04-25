@@ -72,7 +72,7 @@
     text-align: center;
     font-family: var(--main-text-font);
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--headings-dark-color);
     overflow-wrap: break-word;
 }

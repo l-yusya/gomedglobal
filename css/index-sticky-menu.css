@@ -4,7 +4,7 @@
 }
 
 section div nav .navigation-logo-sticky img {
-    max-width: 114px;
+    max-width: 150px;
 }
 
 @media (max-width: 990px) {
@@ -101,7 +101,7 @@ section div nav .navigation-logo-sticky img {
         opacity: 0.95;
         z-index: 2;
         padding: 15px 24px 50px 24px;
-        transition: top 0.3s ease-in 0.1s;
+        transition: top 0.5s ease-in 0.3s;
         overflow: hidden;
         margin: auto;
     }
@@ -241,8 +241,8 @@ section div nav .navigation-logo-sticky img {
         width: 1200px;
         margin: auto;
         display: grid;
-        grid-template-columns: auto 90%;
-        padding: 10px 45px 10px 45px;
+        grid-template-columns: 15% 80%;
+        padding: 10px 40px 10px 40px;
     }
 
     .navigation-burger-sticky {
@@ -259,7 +259,7 @@ section div nav .navigation-logo-sticky img {
     }
 
     .navigation-logo-sticky img {
-        max-width: 100px;
+        max-width: 150px;
     }
 
     .navigation-logo-sticky img:hover {
@@ -272,7 +272,7 @@ section div nav .navigation-logo-sticky img {
 
     .navigation-wrapper-sticky {
         display: grid;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 80% 20%;
         grid-template-rows: auto;
         justify-content: space-evenly;
         align-items: center;

@@ -71,6 +71,7 @@
     font-weight: 600;
     line-height: 40px;
     color: var(--white-background);
+    padding-top: 30px;
 }
 
 .address__info {
@@ -299,6 +300,6 @@
 
     .contact-social {
         width: 40px;
-        padding-left: 15px;
+        padding-left: 10px;
     }
 }

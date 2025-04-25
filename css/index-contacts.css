@@ -208,7 +208,7 @@
 @media (min-width: 768px) {
     .address__wrapper--info {
         display: grid;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 60% 40%;
         grid-template-areas:
             "address form";
         grid-column-gap: 20px;
@@ -271,8 +271,12 @@
         /* padding-top: 20px; */
     }
 
+    .contacts__contact-person {
+        padding-left: 0px;
+        padding-top: 55px;
+    }
     .contact-person_info {
-        padding: 10px 20px;
+        padding: 10px 10px;
         /* text-align: left; */
     }
 

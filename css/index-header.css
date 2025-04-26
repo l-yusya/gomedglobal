@@ -589,19 +589,21 @@ div .links a {
     }
 
     section div .banner__text {
-        width: 50%;
+        width: 80%;
+        padding-left: 50px;
     }
 
     div .banner__text h1 {
         font-size: 4rem;
         line-height: 4.85rem;
         margin-top: 0;
-        max-width: 301px;
+        max-width: 600px;
     }
 
     .banner__links {
         display: flex;
         flex-direction: row;
+        padding-left: 50px;
     }
 
     .links__invite {
@@ -616,16 +618,25 @@ div .links a {
         max-width: 785px;
     }
 
-    section div .banner__text {
+    /* section div .banner__text {
         width: 50%;
-    }
+    } */
 
     div .banner__text h1 {
         font-size: 4.41rem;
         line-height: 4.85rem;
         margin-top: 0;
-        max-width: 301px;
+        /* max-width: 301px; */
     }
+
+    .title--span {
+        font-size: 4.41rem;
+        font-weight: 500;
+        line-height: 6rem;
+        color: var(--white-background);
+        text-transform: uppercase;
+    }
+
 }
 
 @media (min-width: 846px) {
@@ -635,14 +646,14 @@ div .links a {
         max-width: 926px;
     }
 
-    section div .banner__text {
+    /* section div .banner__text {
         width: 50%;
         max-width: 463px;
     }
 
     div .banner__text h1 {
         max-width: 422px;
-    }
+    } */
 }
 
 @media (min-width: 991px) {

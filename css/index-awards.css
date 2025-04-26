@@ -77,6 +77,10 @@
     overflow-wrap: break-word;
 }
 
+#services {
+    scroll-margin-top: -500px;
+  }
+
 @media (min-width: 768px) {
     .awards__content {
         display: grid;
@@ -133,6 +137,10 @@
         font-size: 44px;
         line-height: 55px;
     }
+
+    #services {
+        scroll-margin-top: -350px;
+      }
 }
 
 @media (min-width: 1200px) {
@@ -191,4 +199,8 @@
         font-size: 50px;
         line-height: 60px;
     }
+
+    #services {
+        scroll-margin-top: -170px;
+      }
 }

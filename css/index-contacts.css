@@ -325,6 +325,8 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
   }
   
   .message-button img {
@@ -332,10 +334,15 @@
     height: 30px;
   }
   
+  .message-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .messenger-popup {
     opacity: 0;
     transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
     pointer-events: none;
     position: absolute;
     top: 40px;
@@ -344,7 +351,7 @@
     border: 1px solid #ddd;
     padding: 8px 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Updated bigger shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     z-index: 100;
     white-space: nowrap;
     display: flex;
@@ -359,6 +366,18 @@
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 5px;
+    background-color: #fff; /* Optional: white background behind icons */
+    border-radius: 50%; /* Makes it a perfect circle */
+    overflow: hidden; /* Ensures shadow respects the circle shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* On hover: scale up and add a stronger shadow */
+  .messenger-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   /* Background images for each messenger */
@@ -378,13 +397,25 @@
     transform: translateY(0);
     pointer-events: auto;
   }
+
+  .messenger-popup {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .message-wrapper.active .messenger-popup {
+    opacity: 1;
+    transform: translateY(0);
+  }
   
   /* Responsive on mobile */
   @media (max-width: 768px) {
     .messenger-popup {
       top: 35px;
-      left: -100px;
-      padding: 10px;
+      left: -120px;
+      padding: 10px 12px;
+
     }
   
     .messenger-icon {
@@ -395,14 +426,52 @@
   }
 
   .message-button img,
-.messenger-icon {
-  transition: transform 0.2s ease;
-}
+  .messenger-icon {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* On hover: scale up and add a soft shadow */
+  .message-button img:hover,
+  .messenger-icon:hover {
+    transform: scale(1.2);
+  }
 
-.message-button img:hover,
-.messenger-icon:hover {
-  transform: scale(1.2);
-}
+  .messenger-icon:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
 
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeSlideOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* When active, play fade-in */
+  .message-wrapper.active .messenger-popup {
+    animation: fadeSlideIn 0.4s ease forwards;
+    pointer-events: auto;
+  }
+  
+  /* When closing, play fade-out */
+  .message-wrapper.closing .messenger-popup {
+    animation: fadeSlideOut 0.4s ease forwards;
+    pointer-events: none;
+  }
 
   

@@ -308,3 +308,101 @@
         padding-left: 10px;
     }
 }
+
+.contact-person-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .message-wrapper {
+    position: relative;
+  }
+  
+  .message-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .message-button img {
+    width: auto;
+    height: 30px;
+  }
+  
+  .messenger-popup {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Updated bigger shadow */
+    z-index: 100;
+    white-space: nowrap;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .messenger-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 5px;
+  }
+  
+  /* Background images for each messenger */
+  .whatsapp {
+    background-image: url('../img/whatsapp-logo3.png');
+  }
+  .viber {
+    background-image: url('../img/viber-logo.png');
+  }
+  .telegram {
+    background-image: url('../img/telegram-logo.png');
+  }
+  
+  /* Active popup */
+  .message-wrapper.active .messenger-popup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  /* Responsive on mobile */
+  @media (max-width: 768px) {
+    .messenger-popup {
+      top: 35px;
+      left: -20px;
+      padding: 10px;
+    }
+  
+    .messenger-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 8px;
+    }
+  }
+
+  .message-button img,
+.messenger-icon {
+  transition: transform 0.2s ease;
+}
+
+.message-button img:hover,
+.messenger-icon:hover {
+  transform: scale(1.2);
+}
+
+
+  

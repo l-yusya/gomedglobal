@@ -1,4 +1,4 @@
-header .languages {
+/* header .languages {
     max-width: 100%;
     display: none;
 }
@@ -38,7 +38,7 @@ header .languages__item_white a:hover {
 
 header .languages__item_white_l {
     text-align: right;
-}
+} */
 
 /* header .contacts__item_black {
     color: black;
@@ -62,7 +62,7 @@ header .contacts__item_black a:hover {
     text-decoration: underline;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 } */
-
+/* 
 @media (min-width: 991px) {
     header .languages {
         display: block;
@@ -102,7 +102,7 @@ header .contacts__item_black a:hover {
         min-width: 1120px;
         max-width: 60%;
     }
-}
+} */
 
 /* .container-top {
     max-width: 380px;

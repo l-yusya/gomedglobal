@@ -1,11 +1,13 @@
 const regionsData = {
   Europe: ["🇪🇺 European Union", "🇨🇭 Switzerland", "🇬🇧 United Kingdom"],
-  Americas: [
+  NORAM: [
     "🇨🇦 Canada",
     "🇺🇸 United States",
+    "🇲🇽 Mexico",
+  ],
+  LATAM: [
     "🇦🇷 Argentina",
     "🇨🇴 Colombia",
-    "🇲🇽 Mexico",
   ],
   EEMEA: [
     "🇦🇱 Albania",
@@ -94,8 +96,8 @@ function showTooltip(e) {
       tooltip.classList.remove("three-columns");
     }
 
-    const mq = window.matchMedia( "(max-width: 500px)" );
-    const rect = e.currentTarget.getBoundingClientRect(); 
+    const mq = window.matchMedia("(max-width: 500px)");
+    const rect = e.currentTarget.getBoundingClientRect();
     const containerRect = document
       .querySelector(".markets__map-container")
       .getBoundingClientRect();

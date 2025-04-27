@@ -19,7 +19,7 @@
 }
 
 .markets__description {
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--dark-gray-color);
   margin-bottom: 40px;
 }
@@ -37,14 +37,13 @@
   display: block;
 }
 
-/* Gradient fade top and bottom */
 .markets__map-container::before,
 .markets__map-container::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  height: 100px; /* larger height for smoother fade */
+  height: 100px; 
   z-index: 2;
   pointer-events: none;
 }
@@ -58,25 +57,6 @@
   bottom: 0;
   background: linear-gradient(to top, rgba(255, 250, 250, 0.3) 0%, transparent 100%);
 }
-
-
-/* .map-point {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-color: var(--logo-color);
-  border: 2px solid var(--dark-blue-color);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  z-index: 9;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.map-point:hover {
-  background-color: var(--blue-accent-color);
-  box-shadow: 0 0 10px var(--logo-color);
-} */
 
 .map-point {
   position: absolute;
@@ -107,7 +87,6 @@
   transform: scale(1.2);
 }
 
-/* Tooltip smaller + nicer */
 .map-tooltip {
   position: absolute;
   background-color: var(--white-background);
@@ -128,15 +107,13 @@
 }
 
 .map-tooltip {
-  /* existing tooltip styles */
-  width: 180px; /* default */
+  width: 180px; 
 }
 
 .map-tooltip.three-columns {
-  width: 350px; /* wider for EEMEA */
+  width: 350px;
 }
 
-/* Show active */
 .map-tooltip.active {
   opacity: 1;
   visibility: visible;
@@ -144,7 +121,6 @@
   pointer-events: auto;
 }
 
-/* Tooltip content */
 .map-tooltip h3 {
   margin: 0 0 8px 0;
   color: var(--dark-blue-color);
@@ -161,12 +137,10 @@
   font-size: 0.85rem;
 }
 
-/* EEMEA 3 columns */
 .map-tooltip ul.three-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .map-tooltip {
     width: 180px;
@@ -178,7 +152,7 @@
   }
 
   .map-tooltip.three-columns {
-    width: 300px; /* wider for EEMEA */
+    width: 300px;
   }
 
   .map-tooltip ul {

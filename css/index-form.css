@@ -8,7 +8,6 @@
   color: var(--white-background);
   font-size: 1.7rem;
   font-weight: 800;
-  /* line-height: 46px; */
   text-align: center;
   padding: 10px 24px 10px 24px;
   overflow-wrap: break-word;
@@ -68,7 +67,6 @@
   height: 6rem;
 }
 
-/* reset */
 form input,
 form textarea,
 form fieldset,
@@ -79,7 +77,6 @@ form fieldset,
   border-radius: 8px;
   display: block;
   margin: 0 auto;
-  /* max-width: 70vw; */
 }
 
 form select {
@@ -89,7 +86,6 @@ form select {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
-  /* width: 70vw; */
 }
 
 @media (min-width: 768px) {
@@ -117,7 +113,6 @@ form select {
 
 @media (min-width: 1200px) {
   form select {
-    /* width: 70%; */
     font-size: 1rem;
   }
 
@@ -131,12 +126,7 @@ form select {
   }
 }
 
-/* #application__content {
-    width: 100%;
-    height: 6rem;
-} */
 
-/* border, padding, margin, width */
 form input,
 form textarea,
 form select,

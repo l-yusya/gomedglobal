@@ -31,10 +31,6 @@ section div nav .navigation-logo-sticky img {
         z-index: 11;
     }
 
-    /* .navigation-logo-sticky img {
-        width: 70%;
-    } */
-
     .navigation-burger-sticky {
         display: block;
         position: relative;
@@ -265,10 +261,6 @@ section div nav .navigation-logo-sticky img {
     .navigation-logo-sticky img:hover {
         transform: scale(1.3);
     }
-
-    /* header .banner-bg {
-        min-height: calc(100vh - 79px);
-    } */
 
     .navigation-wrapper-sticky {
         display: grid;

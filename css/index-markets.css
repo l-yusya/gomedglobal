@@ -133,7 +133,7 @@
 }
 
 .map-tooltip.three-columns {
-  width: 330px; /* wider for EEMEA */
+  width: 350px; /* wider for EEMEA */
 }
 
 /* Show active */
@@ -175,6 +175,10 @@
   }
   .map-tooltip ul.three-columns {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .map-tooltip.three-columns {
+    width: 300px; /* wider for EEMEA */
   }
 
   .map-tooltip ul {

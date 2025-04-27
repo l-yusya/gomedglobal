@@ -156,6 +156,8 @@ const points = document.querySelectorAll(".map-point");
 let currentRegion = null;
 let touchTriggered = false; // 👈 new
 
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
 points.forEach((point) => {
   point.addEventListener("touchstart", function (e) {
     touchTriggered = true;
@@ -164,19 +166,81 @@ points.forEach((point) => {
   point.addEventListener("click", function (e) {
     if (touchTriggered) {
       touchTriggered = false;
-      return; // 👈 Skip click if it was right after touch
+      return;
     }
     showTooltip(e);
   });
-  point.addEventListener("mouseenter", showTooltip);
-  point.addEventListener("mouseleave", hideTooltip);
+
+  if (!isTouchDevice) {
+    point.addEventListener("mouseenter", showTooltip);
+    point.addEventListener("mouseleave", hideTooltip);
+  }
 });
 
-document.addEventListener("click", function (event) {
-  if (!event.target.classList.contains("map-point")) {
+document.addEventListener("pointerdown", function (event) {
+  if (
+    !event.target.closest(".map-point") &&
+    !event.target.closest("#tooltip")
+  ) {
     hideTooltip();
   }
 });
+
+
+// points.forEach((point) => {
+//   point.addEventListener("touchstart", function (e) {
+//     touchTriggered = true;
+//     showTooltip(e);
+//   });
+//   point.addEventListener("click", function (e) {
+//     if (touchTriggered) {
+//       touchTriggered = false;
+//       return; // 👈 Skip click if it was right after touch
+//     }
+//     showTooltip(e);
+//   });
+//   point.addEventListener("mouseenter", showTooltip);
+//   point.addEventListener("mouseleave", hideTooltip);
+// });
+
+// points.forEach((point) => {
+//   point.addEventListener("touchstart", function (e) {
+//     touchTriggered = true;
+//     showTooltip(e);
+//   });
+//   point.addEventListener("click", function (e) {
+//     if (touchTriggered) {
+//       touchTriggered = false;
+//       return; // Skip click if it was right after touch
+//     }
+//     showTooltip(e);
+//   });
+// });
+
+// document.addEventListener("click", function (event) {
+//   if (!event.target.classList.contains("map-point")) {
+//     hideTooltip();
+//   }
+// });
+
+// document.addEventListener("click", function (event) {
+//   // 🛠 Only hide tooltip if clicked OUTSIDE both a map point and the tooltip itself
+//   if (
+//     !event.target.closest(".map-point") &&
+//     !event.target.closest("#tooltip")
+//   ) {
+//     hideTooltip();
+//   }
+// });
+
+// document.addEventListener("pointerdown", function (event) {
+//   if (
+//     !event.target.closest(".map-point") &&
+//     !event.target.closest("#tooltip")
+//   ) {
+//     hideTooltip();
+//   }
+// });
 
 // function showTooltip(e) {
 //   e.stopPropagation();

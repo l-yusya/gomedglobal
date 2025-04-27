@@ -1,0 +1,217 @@
+.markets {
+  padding: 50px 20px;
+  background-color: var(--white-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.markets__info {
+  width: 100%;
+  text-align: center;
+}
+
+.markets__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-blue-color);
+  margin-bottom: 20px;
+}
+
+.markets__description {
+  font-size: 1rem;
+  color: var(--dark-gray-color);
+  margin-bottom: 40px;
+}
+
+.markets__map-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.markets__map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Gradient fade top and bottom */
+.markets__map-container::before,
+.markets__map-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px; /* larger height for smoother fade */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.markets__map-container::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255, 250, 250, 0.3) 0%, transparent 100%);
+}
+
+.markets__map-container::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255, 250, 250, 0.3) 0%, transparent 100%);
+}
+
+
+.map-point {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: var(--logo-color);
+  border: 2px solid var(--dark-blue-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Removed transform transition */
+  z-index: 9;
+}
+
+.map-point:hover {
+  background-color: var(--blue-accent-color);
+  box-shadow: 0 0 10px var(--logo-color);
+}
+
+/* Tooltip smaller + nicer */
+.map-tooltip {
+  position: absolute;
+  background-color: var(--white-background);
+  border: 1px solid var(--blue-accent-desaturated);
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 90vw;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.85);
+  transform-origin: top left;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  font-size: 0.9rem;
+}
+
+.map-tooltip {
+  /* existing tooltip styles */
+  width: 180px; /* default */
+}
+
+.map-tooltip.three-columns {
+  width: 350px; /* wider for EEMEA */
+}
+
+/* Show active */
+.map-tooltip.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* Tooltip content */
+.map-tooltip h3 {
+  margin: 0 0 8px 0;
+  color: var(--dark-blue-color);
+  font-size: 1rem;
+}
+
+.map-tooltip ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  font-size: 0.85rem;
+}
+
+/* EEMEA 3 columns */
+.map-tooltip ul.three-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .map-tooltip {
+    width: 180px;
+    height: auto;
+    font-size: 0.6rem;
+  }
+  .map-tooltip ul.three-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .map-tooltip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    font-size: 0.6rem;
+  }
+}
+
+.map-tooltip {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.map-tooltip.active {
+  animation: tooltipPop 0.3s ease;
+}
+
+@keyframes tooltipPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#markets {
+  scroll-margin-top: 300px;
+}
+
+
+@media (min-width: 768px) {
+
+  #markets {
+      scroll-margin-top: 250px;
+    }
+
+    .map-point {
+
+      width: 23px;
+      height: 23x;
+    }
+}
+
+@media (min-width: 1200px) {
+
+  #markets {
+      scroll-margin-top: 120px;
+    }
+
+    .map-point {
+
+      width: 30px;
+      height: 30px;
+    }
+}
+
+#tooltip {
+  pointer-events: none;
+}
+
+#tooltip.visible {
+  pointer-events: all;
+}

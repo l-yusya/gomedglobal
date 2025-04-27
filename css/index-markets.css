@@ -178,14 +178,14 @@
 }
 
 #markets {
-  scroll-margin-top: 300px;
+  scroll-margin-top: 80px;
 }
 
 
 @media (min-width: 768px) {
 
   #markets {
-      scroll-margin-top: 250px;
+      scroll-margin-top: 100px;
     }
 
     .map-point {
@@ -202,7 +202,6 @@
     }
 
     .map-point {
-
       width: 30px;
       height: 30px;
     }

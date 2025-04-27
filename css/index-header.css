@@ -744,7 +744,7 @@ div .links a {
     section div .banner__text {
         width: 100%;
         padding-top: 60px;
-        /* max-width: 585px; */
+        max-width: 700px;
     }
 
     div .banner__text h1 {

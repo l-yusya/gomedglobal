@@ -1,39 +1,13 @@
-(function () {
-  const scrollButton = document.getElementById("scrollBtn");
+const scrollUpButton = document.querySelector('.scroll-up');
 
-  window.onscroll = function () {
-    scrollFunction();
-    scrollFunctionMenu();
-  };
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 200 ||
-      document.documentElement.scrollTop > 200
-    ) {
-      scrollButton.style.display = "block";
-    } else {
-      scrollButton.style.display = "none";
-    }
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    scrollUpButton.classList.add('show');
+  } else {
+    scrollUpButton.classList.remove('show');
   }
+});
 
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
-  scrollButton.addEventListener("click", topFunction);
-
-  const stickyMenu = document.getElementById("sticky__menu");
-
-  function scrollFunctionMenu() {
-    if (
-      document.body.scrollTop > 180 ||
-      document.documentElement.scrollTop > 180
-    ) {
-      stickyMenu.style.display = "flex";
-    } else {
-      stickyMenu.style.display = "none";
-    }
-  }
-})();
+scrollUpButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

@@ -39,7 +39,8 @@ section div nav .navigation-logo img:hover {
     }
 
     section div nav .navigation-logo img {
-        height: 60px;
+        height: 80px;
+        width: auto;
     }
 
     section div nav .navigation-burger {

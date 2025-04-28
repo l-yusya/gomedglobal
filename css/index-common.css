@@ -18,11 +18,14 @@
   --headings-dark-color: #1b1929;
   --logo-color: rgb(53, 114, 239);
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 a {

@@ -212,7 +212,7 @@
 @media (min-width: 1200px) {
 
   #markets {
-      scroll-margin-top: -40px;
+      scroll-margin-top: -20px;
     }
 
     .map-point {

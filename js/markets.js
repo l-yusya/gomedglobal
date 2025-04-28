@@ -127,7 +127,8 @@ document.addEventListener("pointerdown", function (event) {
 // }
 
 // Detect Windows OS
-const isWindows = navigator.userAgent.includes("Windows");
+const isWindows = /Win/.test(navigator.platform);
+
 
 function showTooltip(e) {
   e.stopPropagation();

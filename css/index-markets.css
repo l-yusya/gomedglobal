@@ -9,6 +9,8 @@
 .markets__info {
   width: 100%;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .markets__title {

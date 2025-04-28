@@ -382,13 +382,13 @@
   
   /* Background images for each messenger */
   .whatsapp {
-    background-image: url('../img/whatsapp-logo.png');
+    background-image: url('../img/whatsapp-logo.webp');
   }
   .viber {
-    background-image: url('../img/viber-logo.png');
+    background-image: url('../img/viber-logo.webp');
   }
   .telegram {
-    background-image: url('../img/telegram-logo.png');
+    background-image: url('../img/telegram-logo.webp');
   }
   
   /* Active popup */

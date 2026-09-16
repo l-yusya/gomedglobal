@@ -204,6 +204,10 @@
         display: flex;
         justify-content: space-evenly;
     }
+        .contacts__title {
+        font-size: 44px;
+        line-height: 55px;
+    }
 }
 
 @media (min-width: 1072px) {
@@ -425,6 +429,7 @@
       height: 40px;
       margin: 0 8px;
     }
+
   }
 
   .message-button img,

@@ -48,7 +48,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 100px; 
+  height: 100px;
   z-index: 2;
   pointer-events: none;
 }
@@ -69,7 +69,7 @@
   height: 35px;
   background: #007bff;
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +113,7 @@
 }
 
 .map-tooltip {
-  width: 180px; 
+  width: 180px;
 }
 
 .map-tooltip.three-columns {
@@ -153,6 +153,7 @@
     height: auto;
     font-size: 0.6rem;
   }
+
   .map-tooltip ul.three-columns {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -170,6 +171,7 @@
     gap: 4px;
     font-size: 0.6rem;
   }
+
 }
 
 .map-tooltip {
@@ -185,6 +187,7 @@
     transform: scale(0.8);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -199,26 +202,36 @@
 @media (min-width: 768px) {
 
   #markets {
-      scroll-margin-top: 120px;
-    }
+    scroll-margin-top: 120px;
+  }
 
-    .map-point {
+  .map-point {
 
-      width: 45px;
-      height: 45px;
-    }
+    width: 45px;
+    height: 45px;
+  }
+
+    .markets__title {
+    font-size: 44px;
+    line-height: 55px;
+  }
+
+  .markets__description {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
 
 @media (min-width: 1200px) {
 
   #markets {
-      scroll-margin-top: -20px;
-    }
+    scroll-margin-top: -20px;
+  }
 
-    .map-point {
-      width: 50px;
-      height: 50px;
-    }
+  .map-point {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 #tooltip {
@@ -250,11 +263,12 @@
 
 @keyframes scaleIn {
   0% {
-      transform: scale(0);
-      opacity: 0;
+    transform: scale(0);
+    opacity: 0;
   }
+
   100% {
-      transform: scale(1);
-      opacity: 1;
+    transform: scale(1);
+    opacity: 1;
   }
 }

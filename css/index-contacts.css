@@ -1,5 +1,5 @@
 .contacts {
-    background: linear-gradient(to bottom, rgba(18, 40, 88, 0.7), rgba(30, 47, 92, 0.7)), url(../img/contact-bg.jpg) no-repeat;
+    background: linear-gradient(to bottom, rgba(18, 40, 88, 0.7), rgba(30, 47, 92, 0.7)), url(../img/contact-bg.webp) no-repeat;
     background-size: cover;
     padding: 85px 10px 50px 10px;
     background-position: 48.44% 35.95%;
@@ -115,7 +115,7 @@
     font-weight: 500;
     line-height: 1.2rem;
     color: var(--white-background);
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .contact-person__photo {

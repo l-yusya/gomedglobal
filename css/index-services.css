@@ -1,5 +1,5 @@
 .services {
-    background-color: var(--light-gray-color);
+    background-color: rgba(18, 40, 88, 0.7);
     padding: 75px 0 85px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .services__title {
-    color: var(--headings-dark-color);
+    color: var(--white-background);
     font-size: 38px;
     font-weight: 800;
     line-height: 46px;

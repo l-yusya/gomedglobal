@@ -191,8 +191,8 @@
 
     .services__title {
         padding-top: 30px;
-        font-size: 50px;
-        line-height: 60px;
+        /* font-size: 50px;
+        line-height: 60px; */
     }
 
     /* #services {
